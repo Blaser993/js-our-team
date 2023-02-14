@@ -57,7 +57,7 @@ var team =[
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto (in questo fase usiamo il ciclo for…in )
 
-//let getDiv = document.getElementById("content")
+let getDiv = document.getElementById("wrapper")
 let stampOnDom = getInfoFromObjectArray();
 
 
@@ -79,19 +79,29 @@ function getInfoFromObjectArray() {
     for (let i = 0; i < team.length; i++) {
 
         let membro = team[i];
-
+        
 
         for (let info in membro) {
 
-            let voce = membro[info]
+            voce = membro[info]
 
-            console.log(`
-            <h1>${voce}</h1>
-            `);
+            let nome = membro.nome
+            let ruolo = membro.ruolo
+            let img = membro.immagine
 
+            //console.log(`<h1>${nome}</h1>`)
+            //console.log(`<h2>${ruolo}</h2>`)
+            //console.log(`<img src="${img}" alt="">`)    
             
             
+            getDiv.innerHTML = (`
+                <h1>${nome}</h1>
+                <h2>${ruolo}</h2>
+                <img src="${img}" alt="">
+            `)
         }
+
+
     }
 
     
