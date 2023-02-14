@@ -23,32 +23,32 @@ console.log("ciao team!");
 // Creare l’array di oggetti con le informazioni fornite.
 
 var team =[
-    membro ={
+    membro1 ={
         nome: "Wayne Barnett",
         ruolo: "Founder & CEO",
         immagine: "./img/wayne-barnett-founder-ceo.jpg",
     },
-    membro ={
+    membro2 ={
         nome: "Angela Caroll",
         ruolo: "Chief Editor",
         immagine: "./img/wayne-barnett-founder-ceo.jpg",
     },
-    membro ={
+    membro3 ={
         nome: "Walter Gordon",
         ruolo: "Office Manager",
         immagine: "./img/walter-gordon-office-manager.jpg",
     },
-    membro ={
+    membro4 ={
         nome: "Angela Lopez",
         ruolo: "Social Media Manager",
         immagine: "./img/angela-lopez-social-media-manager.jpg",
     },
-    membro ={
+    membro5 ={
         nome: "Scott Estrada",
         ruolo: "Developer",
         immagine: "./img/scott-estrada-developer.jpg",
     },
-    membro ={
+    membro6 ={
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
         immagine: "./img/barbara-ramos-graphic-designer.jpg",
@@ -62,7 +62,10 @@ console.log(team)
 
 for (let i = 0; i < team.length; i++){
 
+    let membro = team[i]
+
     for (let info in membro) {
+        
         console.log(membro[info]);
     }
 }
