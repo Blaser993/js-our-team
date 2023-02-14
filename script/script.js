@@ -3,9 +3,6 @@ console.log("ciao team!");
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-// MILESTONE 2:
-// Stampare le stesse informazioni su DOM sotto forma di stringhe
-
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 
@@ -60,12 +57,39 @@ console.log(team)
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto (in questo fase usiamo il ciclo for…in )
 
-for (let i = 0; i < team.length; i++){
+//let getDiv = document.getElementById("content")
+let stampOnDom = getInfoFromObjectArray();
+//stampOnDom
 
-    let membro = team[i]
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sotto forma di stringhe
 
-    for (let info in membro) {
-        
-        console.log(membro[info]);
+
+
+
+//console.log(getDiv)
+//getDiv.innerHTML( ${stampOnDom} )
+
+let wrapperEl = document.getElementById(wrapper)
+
+
+
+//FUNZIONI
+
+function getInfoFromObjectArray() {
+    for (let i = 0; i < team.length; i++) {
+
+        let membro = team[i];
+        //console.log(membro)
+
+        for (let info in membro) {
+
+            let voce = membro[info]
+
+            console.log(voce);
+  
+            
+        }
     }
+
 }
