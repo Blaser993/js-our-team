@@ -3,13 +3,6 @@ console.log("ciao team!");
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-// Wayne Barnett	Founder & CEO	wayne-barnett-founder-ceo.jpg
-// Angela Caroll	Chief Editor	angela-caroll-chief-editor.jpg
-// Walter Gordon	Office Manager	walter-gordon-office-manager.jpg
-// Angela Lopez	    Social Media Manager	angela-lopez-social-media-manager.jpg
-// Scott Estrada	Developer	scott-estrada-developer.jpg
-// Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
-
 // MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
 
@@ -30,3 +23,38 @@ console.log("ciao team!");
 // Prima la logica in italiano e poi traduciamo in codice.
 // E ricordiamoci che console.log() è nostro amico!
 // Buon lavoro!
+
+var team =[
+    membro1 ={
+        nome: "Wayne Barnett",
+        ruolo: "Founder & CEO",
+        immagine: "./img/wayne-barnett-founder-ceo.jpg",
+    },
+    membro2 ={
+        nome: "Angela Caroll",
+        ruolo: "Chief Editor",
+        immagine: "./img/wayne-barnett-founder-ceo.jpg",
+    },
+    membro3 ={
+        nome: "Walter Gordon",
+        ruolo: "Office Manager",
+        immagine: "./img/walter-gordon-office-manager.jpg",
+    },
+    membro4 ={
+        nome: "Angela Lopez",
+        ruolo: "Social Media Manager",
+        immagine: "./img/angela-lopez-social-media-manager.jpg",
+    },
+    membro5 ={
+        nome: "Scott Estrada",
+        ruolo: "Developer",
+        immagine: "./img/scott-estrada-developer.jpg",
+    },
+    membro6 ={
+        nome: "Barbara Ramos",
+        ruolo: "Graphic Designer",
+        immagine: "./img/barbara-ramos-graphic-designer.jpg",
+    },
+]
+
+console.log(team)
