@@ -3,12 +3,6 @@ console.log("ciao team!");
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-// MILESTONE 0:
-// Creare l’array di oggetti con le informazioni fornite.
-
-// MILESTONE 1:
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto (in questo fase usiamo il ciclo for…in )
-
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sotto forma di stringhe
 
@@ -24,33 +18,37 @@ console.log("ciao team!");
 // E ricordiamoci che console.log() è nostro amico!
 // Buon lavoro!
 
+
+// MILESTONE 0:
+// Creare l’array di oggetti con le informazioni fornite.
+
 var team =[
-    membro1 ={
+    membro ={
         nome: "Wayne Barnett",
         ruolo: "Founder & CEO",
         immagine: "./img/wayne-barnett-founder-ceo.jpg",
     },
-    membro2 ={
+    membro ={
         nome: "Angela Caroll",
         ruolo: "Chief Editor",
         immagine: "./img/wayne-barnett-founder-ceo.jpg",
     },
-    membro3 ={
+    membro ={
         nome: "Walter Gordon",
         ruolo: "Office Manager",
         immagine: "./img/walter-gordon-office-manager.jpg",
     },
-    membro4 ={
+    membro ={
         nome: "Angela Lopez",
         ruolo: "Social Media Manager",
         immagine: "./img/angela-lopez-social-media-manager.jpg",
     },
-    membro5 ={
+    membro ={
         nome: "Scott Estrada",
         ruolo: "Developer",
         immagine: "./img/scott-estrada-developer.jpg",
     },
-    membro6 ={
+    membro ={
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
         immagine: "./img/barbara-ramos-graphic-designer.jpg",
@@ -58,3 +56,13 @@ var team =[
 ]
 
 console.log(team)
+
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto (in questo fase usiamo il ciclo for…in )
+
+for (let i = 0; i < team.length; i++){
+
+    for (let info in membro) {
+        console.log(membro[info]);
+    }
+}
