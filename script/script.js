@@ -28,7 +28,7 @@ var team =[
     membro2 ={
         nome: "Angela Caroll",
         ruolo: "Chief Editor",
-        immagine: "./img/wayne-barnett-founder-ceo.jpg",
+        immagine: "./img/angela-caroll-chief-editor.jpg",
     },
     membro3 ={
         nome: "Walter Gordon",
@@ -79,31 +79,36 @@ function getInfoFromObjectArray() {
     for (let i = 0; i < team.length; i++) {
 
         let membro = team[i];
+
+        let nome
+        let ruolo
+        let img
       
 
         for (let info in membro) {
 
             voce = membro[info]
 
-            let nome = membro.nome
-            let ruolo = membro.ruolo
-            let img = membro.immagine
+            nome = membro.nome
+            ruolo = membro.ruolo
+            img = membro.immagine
 
             //console.log(`<h1>${nome}</h1>`)
             //console.log(`<h2>${ruolo}</h2>`)
             //console.log(`<img src="${img}" alt="">`)    
-            
-            getDiv.innerHTML =  (`
-                <div class="card">
-                    <h1>${nome}</h1>
-                    <h2>${ruolo}</h2>
-                    <img src="${img}" alt="">
-                </div>
-            `)
 
         }
 
-        getDiv.append = getDiv
+        getDiv.innerHTML +=  
+        (`
+            <div class="card">
+                <h1>${nome}</h1>
+                <h2>${ruolo}</h2>
+                <img src="${img}" alt="">
+            </div>
+        `)
+
+        
 
 
     }
