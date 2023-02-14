@@ -3,9 +3,6 @@ console.log("ciao team!");
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-// BONUS 1:
-// Trasformare la stringa foto in una immagine effettiva
-
 // BONUS 2:
 // Organizzare i singoli membri in card/schede (trovato un esempio allegato, ma siete liberi di gestire la grafica a vostro piacimento)
 
@@ -107,9 +104,6 @@ function getInfoFromObjectArray() {
                 <img src="${img}" alt="">
             </div>
         `)
-
-        
-
 
     }
 
